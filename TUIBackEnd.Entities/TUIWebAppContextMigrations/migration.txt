@@ -1,0 +1,4 @@
+﻿enable-migrations -Force -ContextTypeName TUIBackEnd.Entities.TUIWebAppContext -MigrationsDirectory:TUIWebAppContextMigrations -StartUpProjectName TUIBackEnd.Web
+Add-Migration -configuration TUIBackEnd.Entities.TUIWebAppContextMigrations.Configuration Initial -StartUpProjectName TUIBackEnd.Web
+Update-Database -configuration TUIBackEnd.Entities.TUIWebAppContextMigrations.Configuration -Verbose -StartUpProjectName TUIBackEnd.Web
+
